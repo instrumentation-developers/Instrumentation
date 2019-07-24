@@ -5,5 +5,5 @@ g++ -c ../src/files/WaveFile.cpp
 g++ -c ../src/files/BinaryFile.cpp
 g++ -c ../src/Wav2Bin.cpp
 g++ -c ../src/Bin2Wav.cpp
-g++ -o Wav2Bin.exe Utils.o Command.o File.o WaveFile.o BinaryFile.o Wav2Bin.o
-g++ -o Bin2Wav.exe Utils.o Command.o File.o WaveFile.o BinaryFile.o Bin2Wav.o
+g++ -o Wav2Bin.exe Utils.o Command.o File.o WaveFile.o BinaryFile.o Wav2Bin.o -static-libgcc -static-libstdc++
+g++ -o Bin2Wav.exe Utils.o Command.o File.o WaveFile.o BinaryFile.o Bin2Wav.o -static-libgcc -static-libstdc++
